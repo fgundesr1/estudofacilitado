@@ -73,7 +73,7 @@
       overflow: hidden;
       height: 39px;
       width: 39px;
-      background:#3a6073;
+      background: #3a6073;
 
     }
 
@@ -97,7 +97,7 @@
       background-color: #f1f1f1;
       background-image: #f2f2f2;
       border-radius: 20px;
-      padding: 40px;
+      padding: 20px;
       box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.308);
 
     }
@@ -150,6 +150,9 @@
     }
 
 
+    .addprova {
+      padding: 20px 50px 20px 50px;
+    }
 
 
 
@@ -227,6 +230,9 @@
         overflow: hidden;
         height: 35px;
         width: 35px;
+      }
+      .addprova {
+        padding: 10px 10px 10px 10px;
       }
     }
 
@@ -405,20 +411,34 @@
                    ">
 
             <div class="grid-container">
-              <div class="grid-item">
+              <div class="grid-item" style="padding: 40px;">
                 <h6 style="color:black;">Olá Ryan Fagundes,</h6>
                 <p> Continuar seus estudos</p>
-                <a href="tarefadiaria.html"><button class="btn btn-primary" style="background-color: #3a6073; border:none;">Tarefas diárias</button></a>
+                <a href="tarefadiaria.html"><button class="btn btn-primary"
+                    style="background-color: #3a6073; border:none;">Tarefas diárias</button></a>
               </div>
               <div class="grid-item">
-                <h6 style="color:rgb(171, 166, 166);">Adicionar nova prova</h6>
-                <div class="col-sm-6">
-                  <input type="text" class="col-sm-6 form-control" placeholder="Nome da prova"></input>
-                  <br>
-                  <input class="col-sm-6 form-control" type="date" id="data" name="data">
+                <div class="addprova">
+                  <div style="text-align: center;">
+                    <h6 style="color:rgb(171, 166, 166);">Adicionar nova prova</h6>
+                    <div class="col-md-auto">
+                      <div class="col-md-auto">
+                        <input type="text" class="col-sm-6 form-control" placeholder="Nome da prova"
+                          style="text-align: center;"></input>
+                        <div style="margin-top: 2px;"></div>
+                        <input class="col-sm-10 form-control" type="date" id="data" name="data"
+                          style="text-align: center;">
+                        <div style="margin-top: 2px;"></div>
+
+                        <div class="d-grid gap-2">
+                          <button class="btn btn-primary " style="background-color: #3a6073; border:none;">Adicionar
+                            prova</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
             </div>
             <br>
             <br>
