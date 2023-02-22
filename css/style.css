@@ -360,7 +360,7 @@ h1, .h1 {
 }
 
 .dashboard-toolbar {
-    min-height: 84px;
+    min-height: 50px;
     background-color: #dfdfdf;
     display: -webkit-box;
     display: -webkit-flex;
