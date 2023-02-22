@@ -9,10 +9,8 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css'>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/grafico.css">
-  <link rel="stylesheet" href="./css/profilemenu.css">
 
 
   <style>
@@ -32,19 +30,13 @@
 
     }
 
-    .usuario {
-      height: 40px;
-      background-color: #DFDFDF;
-    }
 
     .imgusuario {
-      float: left;
+     margin-left: 90%;
       border-radius: 100%;
       overflow: hidden;
       height: 40px;
       width: 40px;
-      background: black;
-
     }
 
     img {
@@ -158,13 +150,8 @@
     }
 
 
-    @media screen and (max-width:13660px) {
-      .horaestudada1 {
-        display: none;
-      }
 
 
-    }
 
     @media screen and (max-width:1120px) {
       .horaestudada1 {
@@ -281,10 +268,13 @@
         margin-top: 10px;
       }
 
-      .usuario {
-        margin-right: 300px;
-
-      }
+      .imgusuario {
+        margin-left: 72%;
+         border-radius: 100%;
+         overflow: hidden;
+         height: 35px;
+         width: 35px;
+       }
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
@@ -361,38 +351,33 @@
     <div class='dashboard-app'>
 
       <header class='dashboard-toolbar'>
-        <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
-<div class="profile">
-        <nav class="nav">
-          <div class="navcontainer">
-          
-            <nav class="navinner">
-              <a href="#0" class="profileddtrigger"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/me.jpg" /></a>
-              <!-- mobile main menu-->
-              <div class="ddcontainer mobilemenudd">
-                <nav class="ddnav">
-                  <a href="#0"><span class="material-icons">dashboard</span><span>Dashboard</span></a>
-                  <a href="#0"><span class="material-icons">search</span><span>Search</span></a>
-                  <a href="#0"><span class="material-icons">insert_drive_file</span><span>Drafts</span></a>
-                </nav>
-              </div>
-              <!-- dropdown profile menu -->
-              <div class="ddcontainer profiledd">
-                <a href="#0" class="ddheader">
-                  
-                  <h5 class="ddname">Ryan Fagundes</h5><span class="ddtitle">Front End Dev</span>
-                </a>
-                <nav class="ddnav">
-                  <a href="#0"><span class="material-icons">notifications</span><span>Notifications</span></a>
-                  <a href="#0"><span class="material-icons">settings</span><span>Settings</span></a>
-                  <a href="#0"><span class="material-icons">phone</span><span>Support</span></a>
-                  <a href="#0"><span class="material-icons">exit_to_app</span><span>Logout</span></a>
-                </nav>
-              </div>
-            </nav>
-          </div>
-        </nav>
-      </div>
+        <div>
+
+        </div><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    
+         
+            <a class="imgusuario"  data-bs-toggle="dropdown" >
+              <img src="http://www.wingspan.co.nz/images/raptor.jpg" />
+            </a>
+            <ul class="dropdown-menu" >
+              <br>
+             <h6 style="text-align:center;">Ryan Fagundes</h6>
+              <hr>
+              <li><a class="dropdown-item" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg> &nbsp; Perfil</a></li>
+              <li><a class="dropdown-item" href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+              </svg> &nbsp; Opções</a></li>
+              <li><a class="dropdown-item" href="index.html" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg> &nbsp; Sair</a></li>
+            </ul>
+         
+
+
       </header>
       <div class='dashboard-content'>
 
@@ -514,10 +499,8 @@
               <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js'></script>
-              <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
               <script src="./js/grafico.js"></script>
               <script src="./js/graficobarra.js"></script>
-              <script src="./js/profilemenu.js"></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
               <script src="./js/script.js"></script>
