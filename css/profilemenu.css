@@ -1,0 +1,167 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+.nav * {
+  box-sizing: border-box;
+}
+
+.nav {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 12pt;
+  text-decoration:none;
+}
+
+.navcontainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 1vw;
+  width: 80%;
+  text-decoration:none;
+}
+
+.navinner {
+  position: relative;
+}
+
+.navinner > a:not(.profileddtrigger):not(.ddtriggermobile) {
+  color: #7b7de5;
+  margin: 0 .25vw;
+  padding: 0 .5vw;
+}
+
+@media (max-width: 1000px) {
+  .navinner > a:not(.profileddtrigger):not(.ddtriggermobile) {
+    display: none;
+  }
+}
+
+.profileddtrigger {
+  margin: 0 .25vw;
+}
+
+.ddtriggermobile {
+  margin-right: .75vw;
+  position: relative;
+  top: .75vh;
+}
+
+@media (min-width: 1000px) {
+  .ddtriggermobile {
+    display: none;
+  }
+}
+
+.ddtriggermobile i {
+  color: #7b7de5;
+  font-size: 24pt;
+}
+
+@media (min-width: 1000px) {
+  .mobilemenudd {
+    display: none;
+  }
+}
+
+.profileddtrigger {
+  position: relative;
+}
+
+.profileddtrigger:after {
+  color: #777;
+  content: '\E5C5';
+  font-family: 'Material Icons';
+  top: 50%;
+}
+
+.profileddtrigger img {
+  border: 3px solid #eee;
+  border-radius: 50%;
+  height: 52px;
+  padding: 1px;
+}
+
+.ddcontainer {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 14px 0 rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: -3px;
+  top: 70px;
+  transform: translateY(-5px);
+  transition: 300ms ease;
+  z-index: -1;
+}
+
+.ddcontainer.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+  z-index: 50;
+}
+
+.ddheader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5vw;
+}
+
+.ddheader:hover,
+.ddheader:focus {
+  background: #f7f7f7;
+}
+
+.ddheader img {
+  border-radius: 50%;
+  height: 52px;
+}
+
+.ddheader .ddname {
+  color: #555;
+  margin: 8px 0 4px;
+}
+
+.ddheader .ddtitle {
+  color: #999;
+  font-size: 10pt;
+}
+
+.ddnav {
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.ddnav a {
+  border-bottom: 1px solid #e5e5e5;
+  color: #7b7de5;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.ddnav a span:not(.material-icons) {
+  margin-left: 5px;
+}
+
+.ddnav a:hover,
+.ddnav a:focus {
+  background: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.profile{
+    float: right;
+    margin-left: 80%;
+    text-decoration:none;
+}

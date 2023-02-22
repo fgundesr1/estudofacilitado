@@ -9,8 +9,10 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/grafico.css">
+  <link rel="stylesheet" href="./css/profilemenu.css">
 
 
   <style>
@@ -359,32 +361,38 @@
     <div class='dashboard-app'>
 
       <header class='dashboard-toolbar'>
-        <div>
-
-        </div><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
-
-        <!-- <div class="usuario">
-          <div class="imgusuario">
-            <img src="http://www.wingspan.co.nz/images/raptor.jpg" />
-          </div>
-
-          <div class="nomeusuario">
-            <p>
-              <a style="color:black" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Olá, Ryan Fagundes
-              </a>
-
-            </p>
-            <div class="collapse" id="collapseExample">
-              <div class="cardnome">
-
-                <a href="index.html">Sair</a>
-
+        <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+<div class="profile">
+        <nav class="nav">
+          <div class="navcontainer">
+          
+            <nav class="navinner">
+              <a href="#0" class="profileddtrigger"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/me.jpg" /></a>
+              <!-- mobile main menu-->
+              <div class="ddcontainer mobilemenudd">
+                <nav class="ddnav">
+                  <a href="#0"><span class="material-icons">dashboard</span><span>Dashboard</span></a>
+                  <a href="#0"><span class="material-icons">search</span><span>Search</span></a>
+                  <a href="#0"><span class="material-icons">insert_drive_file</span><span>Drafts</span></a>
+                </nav>
               </div>
-            </div>
+              <!-- dropdown profile menu -->
+              <div class="ddcontainer profiledd">
+                <a href="#0" class="ddheader">
+                  
+                  <h5 class="ddname">Ryan Fagundes</h5><span class="ddtitle">Front End Dev</span>
+                </a>
+                <nav class="ddnav">
+                  <a href="#0"><span class="material-icons">notifications</span><span>Notifications</span></a>
+                  <a href="#0"><span class="material-icons">settings</span><span>Settings</span></a>
+                  <a href="#0"><span class="material-icons">phone</span><span>Support</span></a>
+                  <a href="#0"><span class="material-icons">exit_to_app</span><span>Logout</span></a>
+                </nav>
+              </div>
+            </nav>
           </div>
-        </div> -->
+        </nav>
+      </div>
       </header>
       <div class='dashboard-content'>
 
@@ -506,8 +514,10 @@
               <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js'></script>
+              <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
               <script src="./js/grafico.js"></script>
               <script src="./js/graficobarra.js"></script>
+              <script src="./js/profilemenu.js"></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
               <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
               <script src="./js/script.js"></script>
