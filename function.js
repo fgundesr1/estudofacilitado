@@ -401,7 +401,7 @@ $(document).ready(function () {
                 var txt;
                 txt = $(this).text().replace('Desconto', '');
                 $(this).text(txt);
-            }), $(".busca input").attr("placeholder", "OlÃ¡, o que estÃ¡ procurando hoje?"), $(".carrinho").removeClass('vazio'), $('#delimitadorBarra').after($('.menu.superior')), $('.botao-comprar-ajax').data('loading-text', 'Aguarde...');
+            }), $(".busca input").attr("placeholder", "Olá, o que está procurando hoje?"), $(".carrinho").removeClass('vazio'), $('#delimitadorBarra').after($('.menu.superior')), $('.botao-comprar-ajax').data('loading-text', 'Aguarde...');
 
             // produto flutuante insistente
             $('.pagina-produto #corpo').append('<div id="flutuante-produto" class="hidden-phone hidden-tablet"><div class="conteiner"></div></div>');
@@ -473,7 +473,7 @@ $(document).ready(function () {
         }
 
         copyright = function() {
-            $('#rodape > div:last-child .row-fluid div:last-child a').addClass('loja-integrada-copyright'), $('#rodape > div:last-child .row-fluid > div:nth-child(2)').before('<div class="design-fox"><a target="_blank" href="https://foxtech.io/"><img src="//help.foxtech.io/files/logo.png"></a></div>'), $('#rodape > div:last-child .row-fluid > div:nth-child(2)').before($('.loja-integrada-copyright')), $('a.loja-integrada-copyright').html('<img src="https://cdn.awsli.com.br/995/995528/arquivos/logo-lojaintegrada.png">'), $('#rodape .institucional .conteiner .row-fluid').find('.span9').addClass('span12').removeClass('span9'), $('#rodape .links-rodape.links-rodape-categorias').addClass('span3').removeClass('span4'), $('.span4.links-rodape.links-rodape-paginas').addClass('span2').removeClass('span4'), $('#rodape .pagamento').addClass('span8').removeClass('span4'), $('#rodape .selos').addClass('span4').removeClass('span4'), $("#rodape .span2:nth-child(2) .titulo").html("Institucional"), $("#rodape .span4.pagamento .titulo").html("Pague com"), $("#rodape .span4.selos .titulo").html("SeguranÃ§a"), $("#rodape .contato .titulo").html("Central de ajuda"), $('#rodape .span4:nth-child(2)').addClass('span3').removeClass('span4'), $("#rodape > div:last-child").addClass("assinatura-rodape");
+            $('#rodape > div:last-child .row-fluid div:last-child a').addClass('loja-integrada-copyright'), $('#rodape > div:last-child .row-fluid > div:nth-child(2)').before('<div class="design-fox"><a target="_blank" href="https://foxtech.io/"><img src="//help.foxtech.io/files/logo.png"></a></div>'), $('#rodape > div:last-child .row-fluid > div:nth-child(2)').before($('.loja-integrada-copyright')), $('a.loja-integrada-copyright').html('<img src="https://cdn.awsli.com.br/995/995528/arquivos/logo-lojaintegrada.png">'), $('#rodape .institucional .conteiner .row-fluid').find('.span9').addClass('span12').removeClass('span9'), $('#rodape .links-rodape.links-rodape-categorias').addClass('span3').removeClass('span4'), $('.span4.links-rodape.links-rodape-paginas').addClass('span2').removeClass('span4'), $('#rodape .pagamento').addClass('span8').removeClass('span4'), $('#rodape .selos').addClass('span4').removeClass('span4'), $("#rodape .span2:nth-child(2) .titulo").html("Institucional"), $("#rodape .span4.pagamento .titulo").html("Pague com"), $("#rodape .span4.selos .titulo").html("Segurança"), $("#rodape .contato .titulo").html("Central de ajuda"), $('#rodape .span4:nth-child(2)').addClass('span3').removeClass('span4'), $("#rodape > div:last-child").addClass("assinatura-rodape");
         }
 
         newRodape = function() {
@@ -514,7 +514,7 @@ $(document).ready(function () {
             $(".news-rodape").append($('.redes-sociais'));
             $('#rodape .contato').append(
                 '<li class="complement">' +
-                '<li class="operation" id="operation""><strong>HorÃ¡rio de Atendimento:</strong><p>Seg a Sex de 08h Ã s 18h<br>SÃ¡bado de 08h Ã s 14h</p></li>' +
+                '<li class="operation" id="operation""><strong>Horário de Atendimento:</strong><p>Seg a Sex de 08h às 18h<br>Sábado de 08h às 14h</p></li>' +
                 '<a class="atd-rodape" id="atd-rodape" href="#modalContato" data-toggle="modal" data-target="#modalContato">Fale conosco</a>' +
                 '</li>'
             );
